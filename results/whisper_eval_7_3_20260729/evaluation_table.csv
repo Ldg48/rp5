@@ -1,0 +1,13 @@
+﻿model,run,source,count,cer,wer,keyword_hit_rate,model_size
+Zeroth baseline HF,GPU / HF Transformers / max_new_tokens=10,overall,2398,3.3802,1.9013,91.83%,924.1 MB
+Zeroth baseline HF,GPU / HF Transformers / max_new_tokens=10,AI Hub held-out,2370,3.4163,1.9158,92.24%,924.1 MB
+Zeroth baseline HF,GPU / HF Transformers / max_new_tokens=10,New direct recording,28,0.3221,0.6786,57.14%,924.1 MB
+Zeroth baseline INT8,CPU / CTranslate2 INT8 / beam_size=1,overall,2398,0.4376,0.8383,88.49%,239.5 MB
+Zeroth baseline INT8,CPU / CTranslate2 INT8 / beam_size=1,AI Hub held-out,2370,0.4389,0.8417,88.86%,239.5 MB
+Zeroth baseline INT8,CPU / CTranslate2 INT8 / beam_size=1,New direct recording,28,0.3325,0.5536,57.14%,239.5 MB
+LoRA fine-tuned HF,GPU / HF Transformers / max_new_tokens=10,overall,2398,0.0427,0.0482,99.62%,464.6 MB
+LoRA fine-tuned HF,GPU / HF Transformers / max_new_tokens=10,AI Hub held-out,2370,0.0301,0.0468,99.87%,464.6 MB
+LoRA fine-tuned HF,GPU / HF Transformers / max_new_tokens=10,New direct recording,28,1.1143,0.1607,78.57%,464.6 MB
+LoRA fine-tuned INT8,CPU / CTranslate2 INT8 / beam_size=1,overall,2398,0.0231,0.0651,99.58%,234.4 MB
+LoRA fine-tuned INT8,CPU / CTranslate2 INT8 / beam_size=1,AI Hub held-out,2370,0.0210,0.0616,99.83%,234.4 MB
+LoRA fine-tuned INT8,CPU / CTranslate2 INT8 / beam_size=1,New direct recording,28,0.1956,0.3571,78.57%,234.4 MB

@@ -1,0 +1,41 @@
+.env
+volumes/data/**
+volumes/logs/**
+api/auth/firebase_key.json
+__pycache__/
+.pytest_cache/
+.tmp*/
+*.onnx
+*.pyc
+*.pyo
+.venv/
+
+# Local ASR models and training checkpoints
+whisper/models/
+whisper_models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Raw and processed audio datasets
+*.wav
+*.m4a
+*.mp3
+*.flac
+*.zip
+*.tar
+*.z01
+*.z02
+*.z03
+*.z04
+*.z05
+
+# Generated datasets and evaluation predictions
+/whisper_curated/
+/whisper_curated_processed/
+/whisper_user_recordings_processed/
+/whisper_eval_*/
+/baseline_*/
+/user_recordings_eval_*/
