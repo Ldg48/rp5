@@ -35,6 +35,46 @@
         logs/
 ```
 
+## Whisper 위급 음성 인식 모델
+
+한국어 낙상 및 도움 요청 음성 인식에는 LoRA 파인튜닝 후 CTranslate2 INT8로 변환한 Whisper Small 모델을 사용합니다.
+
+- Hugging Face: [daegyeong48/whisper-small-ko-fall-help-ct2-int8](https://huggingface.co/daegyeong48/whisper-small-ko-fall-help-ct2-int8)
+- 입력: 16,000 Hz, mono
+- 마이크 입력 길이: 기본 5초
+- 실행 방식: CPU / faster-whisper / CTranslate2 INT8
+- 모델 크기: 약 234.4 MB
+
+현재 Hugging Face 저장소는 비공개입니다. 소유자 계정으로 로그인하거나 별도의 접근 권한이 있어야 내려받을 수 있습니다. 토큰을 팀원과 공유하지 마세요.
+
+1. 실행 라이브러리 설치
+
+```powershell
+python -m pip install -r whisper/requirements.txt
+```
+
+2. Hugging Face 로그인 및 모델 다운로드
+
+```powershell
+hf auth login
+hf download daegyeong48/whisper-small-ko-fall-help-ct2-int8 `
+  --local-dir whisper_models/whisper-small-ko-fall-help-userx5-ct2-int8
+```
+
+3. 마이크 장치 확인
+
+```powershell
+python tools/transcribe_mic_int8.py --list-devices
+```
+
+4. 5초 마이크 추론
+
+```powershell
+python tools/transcribe_mic_int8.py --seconds 5 --device 1
+```
+
+Whisper와 AST가 하나의 마이크 입력을 공유하는 구조는 [공용 오디오 버퍼 문서](docs/shared_audio_buffer.md)를 참고하세요.
+
 ## 저장소 이름 추천
 
 GitHub 저장소 이름 추천:
