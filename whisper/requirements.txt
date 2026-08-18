@@ -1,4 +1,7 @@
 openai-whisper
+faster-whisper
+huggingface_hub
 sounddevice
+soundfile
 scipy
 ffmpeg-python
