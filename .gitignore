@@ -9,6 +9,7 @@ __pycache__/
 *.pyc
 *.pyo
 .venv/
+/m4_artifacts/
 
 # Local ASR models and training checkpoints
 whisper/models/

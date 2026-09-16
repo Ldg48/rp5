@@ -1,0 +1,6 @@
+-r requirements.txt
+onnxruntime==1.23.2
+
+# Export only (not required for ordinary CT2 or ONNX runtime):
+# onnx==1.19.1, torch==2.13.0, transformers==5.13.1
+# Export was tested with torch 2.13.0+cu132, on CPU, in a separate environment.

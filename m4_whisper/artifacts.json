@@ -1,0 +1,301 @@
+{
+  "release_tag": "m4-whisper-handoff-20260916",
+  "download_base": "https://github.com/Ldg48/rp5/releases/download/m4-whisper-handoff-20260916",
+  "guard_sha256": "7ae6b89a38bdcca70abf7762e08319f19fa2c0446b376e7ed29c938603f75658",
+  "artifacts": {
+    "ct2_baseline_fp32": {
+      "filename": "m4-ct2-baseline_fp32.zip",
+      "relative_directory": "ct2/baseline_fp32",
+      "sha256": "d69c3b2b1b76a9939c568e6532009c585f3933b19039d5dd2207ad92866eac6a",
+      "bytes": 900178774,
+      "files": {
+        "config.json": {
+          "sha256": "03b9c1bea9836ae8577192d84b3a15f33b89fc5400bdd46ec3dddada070607f5",
+          "bytes": 2614
+        },
+        "model.bin": {
+          "sha256": "b36f7608d8809e0c0dcde4c3cd6a5c08feeaf6eaa05ba0b38872e1e63c2c27ca",
+          "bytes": 967072097
+        },
+        "MODEL_NOTICE.md": {
+          "sha256": "2a851ee595d70a649edaf1a0e3b9de646c0a24f5993a070a0308647bc4b90fc1",
+          "bytes": 1495
+        },
+        "OPENAI_LICENSE.txt": {
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063
+        },
+        "preprocessor_config.json": {
+          "sha256": "725b13a27e13c3346f7cf14ec08b8523af70fafda4231d4ddffcfacd8724c57b",
+          "bytes": 184989
+        },
+        "tokenizer.json": {
+          "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "bytes": 2480466
+        },
+        "tokenizer_config.json": {
+          "sha256": "96517041b75e6037309356564e6038c9f94554e140d1c3495ae64ab4ef6f006f",
+          "bytes": 829
+        },
+        "UPSTREAM_LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "vocabulary.json": {
+          "sha256": "ec4bc27240fb6d7bb8b3d084a1257d98c0b04c16f76142ca0263459ce04436a2",
+          "bytes": 1119969
+        }
+      },
+      "historical_ct2_metrics_apply": true
+    },
+    "ct2_baseline_int8": {
+      "filename": "m4-ct2-baseline_int8.zip",
+      "relative_directory": "ct2/baseline_int8",
+      "sha256": "d703067a48f857e7f2551590f4e77c9ca69cbe25fe2be248fd0f8247e86a94ac",
+      "bytes": 216131099,
+      "files": {
+        "config.json": {
+          "sha256": "03b9c1bea9836ae8577192d84b3a15f33b89fc5400bdd46ec3dddada070607f5",
+          "bytes": 2614
+        },
+        "model.bin": {
+          "sha256": "35c79c3e2a57bf7d26d35cdacf7affbba3341ed4b5a692dc7875031509b119cd",
+          "bytes": 248203797
+        },
+        "MODEL_NOTICE.md": {
+          "sha256": "2a851ee595d70a649edaf1a0e3b9de646c0a24f5993a070a0308647bc4b90fc1",
+          "bytes": 1495
+        },
+        "OPENAI_LICENSE.txt": {
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063
+        },
+        "preprocessor_config.json": {
+          "sha256": "725b13a27e13c3346f7cf14ec08b8523af70fafda4231d4ddffcfacd8724c57b",
+          "bytes": 184989
+        },
+        "tokenizer.json": {
+          "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "bytes": 2480466
+        },
+        "tokenizer_config.json": {
+          "sha256": "96517041b75e6037309356564e6038c9f94554e140d1c3495ae64ab4ef6f006f",
+          "bytes": 829
+        },
+        "UPSTREAM_LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "vocabulary.json": {
+          "sha256": "ec4bc27240fb6d7bb8b3d084a1257d98c0b04c16f76142ca0263459ce04436a2",
+          "bytes": 1119969
+        }
+      },
+      "historical_ct2_metrics_apply": true
+    },
+    "ct2_finetuned_fp32": {
+      "filename": "m4-ct2-finetuned_fp32.zip",
+      "relative_directory": "ct2/finetuned_fp32",
+      "sha256": "c65a3d2edc33f7e6b51e9c71be3f00e894a719a44ff221fac2cc191af1c4c5e4",
+      "bytes": 607128471,
+      "files": {
+        "config.json": {
+          "sha256": "03b9c1bea9836ae8577192d84b3a15f33b89fc5400bdd46ec3dddada070607f5",
+          "bytes": 2614
+        },
+        "model.bin": {
+          "sha256": "30c50464afb1ca9fb0222e2e9d774d2056bd61f1a004dfb3fbf9d9a969898cbb",
+          "bytes": 967072097
+        },
+        "MODEL_NOTICE.md": {
+          "sha256": "2a851ee595d70a649edaf1a0e3b9de646c0a24f5993a070a0308647bc4b90fc1",
+          "bytes": 1495
+        },
+        "OPENAI_LICENSE.txt": {
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063
+        },
+        "preprocessor_config.json": {
+          "sha256": "725b13a27e13c3346f7cf14ec08b8523af70fafda4231d4ddffcfacd8724c57b",
+          "bytes": 184989
+        },
+        "processor_config.json": {
+          "sha256": "0ddb6d4341f4f0f0373c0243b9a8a60f914e90ea2794f5833e4a2c389f54e69f",
+          "bytes": 426
+        },
+        "tokenizer.json": {
+          "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "bytes": 2480466
+        },
+        "tokenizer_config.json": {
+          "sha256": "8d885bac515fdff177c310c559031ebdc12f38bc854d5adee14f4b02cc5c492e",
+          "bytes": 2198
+        },
+        "UPSTREAM_LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "vocabulary.json": {
+          "sha256": "ec4bc27240fb6d7bb8b3d084a1257d98c0b04c16f76142ca0263459ce04436a2",
+          "bytes": 1119969
+        }
+      },
+      "historical_ct2_metrics_apply": true
+    },
+    "ct2_finetuned_int8": {
+      "filename": "m4-ct2-finetuned_int8.zip",
+      "relative_directory": "ct2/finetuned_int8",
+      "sha256": "38e7c5454ae2c79f4ca487659faf9703b2ebce0c1ece5a516bdcf209239fc2ce",
+      "bytes": 212830628,
+      "files": {
+        "config.json": {
+          "sha256": "03b9c1bea9836ae8577192d84b3a15f33b89fc5400bdd46ec3dddada070607f5",
+          "bytes": 2614
+        },
+        "model.bin": {
+          "sha256": "b7eee8e7be0a97274745b36aa47b489a9e55872ecf356c220ecb5372b305f1cb",
+          "bytes": 244612629
+        },
+        "MODEL_NOTICE.md": {
+          "sha256": "2a851ee595d70a649edaf1a0e3b9de646c0a24f5993a070a0308647bc4b90fc1",
+          "bytes": 1495
+        },
+        "OPENAI_LICENSE.txt": {
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063
+        },
+        "preprocessor_config.json": {
+          "sha256": "725b13a27e13c3346f7cf14ec08b8523af70fafda4231d4ddffcfacd8724c57b",
+          "bytes": 184989
+        },
+        "processor_config.json": {
+          "sha256": "0ddb6d4341f4f0f0373c0243b9a8a60f914e90ea2794f5833e4a2c389f54e69f",
+          "bytes": 426
+        },
+        "tokenizer.json": {
+          "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "bytes": 2480466
+        },
+        "tokenizer_config.json": {
+          "sha256": "8d885bac515fdff177c310c559031ebdc12f38bc854d5adee14f4b02cc5c492e",
+          "bytes": 2198
+        },
+        "UPSTREAM_LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "vocabulary.json": {
+          "sha256": "ec4bc27240fb6d7bb8b3d084a1257d98c0b04c16f76142ca0263459ce04436a2",
+          "bytes": 1119969
+        }
+      },
+      "historical_ct2_metrics_apply": true
+    },
+    "onnx_baseline_fp32": {
+      "filename": "m4-onnx-baseline_fp32.zip",
+      "relative_directory": "onnx/baseline_fp32",
+      "sha256": "c016dbe50725858bc2021e0787b5d06ad34493593cd3e5bfbd4b23f8f9bc9aa7",
+      "bytes": 1043382333,
+      "files": {
+        "config.json": {
+          "sha256": "4675a6ba91878adc214b3250502f210db14ce33d50e56cf378cb8727b31a4f00",
+          "bytes": 1301
+        },
+        "decoder.onnx": {
+          "sha256": "2014a255df87dd1d9fa9c1bd519b5018241a61d3d92107e36003b20077c23538",
+          "bytes": 773927836
+        },
+        "encoder.onnx": {
+          "sha256": "33cc53b75e4c8847881790ec4c00e122d5201be0419d8f067093eacc96da3e7e",
+          "bytes": 352715736
+        },
+        "export_manifest.json": {
+          "sha256": "659ad30b9c0b6c59f4221b2d3ef3968683ad9b9b234e6baca4e067d2a1780af3",
+          "bytes": 2663
+        },
+        "generation_config.json": {
+          "sha256": "2bcfcda35c4db078b5bcc842349cfb85d4b8fa7887516516eede535e5cb0b1e9",
+          "bytes": 314
+        },
+        "MODEL_NOTICE.md": {
+          "sha256": "2a851ee595d70a649edaf1a0e3b9de646c0a24f5993a070a0308647bc4b90fc1",
+          "bytes": 1495
+        },
+        "OPENAI_LICENSE.txt": {
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063
+        },
+        "processor_config.json": {
+          "sha256": "0ddb6d4341f4f0f0373c0243b9a8a60f914e90ea2794f5833e4a2c389f54e69f",
+          "bytes": 426
+        },
+        "tokenizer.json": {
+          "sha256": "89370bd0611cfddc441f25d70884fd04c7e5cd267c7a0d5444676b59888f79a8",
+          "bytes": 3653236
+        },
+        "tokenizer_config.json": {
+          "sha256": "8e8209daae785f9b5cc771d8aaa5c6a46f572c16bec207208619fa7cc52fbbf6",
+          "bytes": 2185
+        },
+        "UPSTREAM_LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      },
+      "historical_ct2_metrics_apply": false
+    },
+    "onnx_finetuned_fp32": {
+      "filename": "m4-onnx-finetuned_fp32.zip",
+      "relative_directory": "onnx/finetuned_fp32",
+      "sha256": "a31e1b2470b11886250581552f7e0030f91c1035335f6654a7000ed04e6e2b19",
+      "bytes": 699011210,
+      "files": {
+        "config.json": {
+          "sha256": "87d4f009d4bc5092e57dd7932572fcbe4ee38a0bc993d628b94e64c4988828e4",
+          "bytes": 1302
+        },
+        "decoder.onnx": {
+          "sha256": "50bdfb9f27ac59caa7321797c758d979bacae5532d022e7fd6f748d77ec46386",
+          "bytes": 773927836
+        },
+        "encoder.onnx": {
+          "sha256": "86c19aac9ef2b9772f1dc11ae5f229bea2f9433ca036eda3a785651aa04dfb5a",
+          "bytes": 352715736
+        },
+        "export_manifest.json": {
+          "sha256": "6e701116fb731887ed38cc230c3196ff5f4816209a95932b743733a6ec1d93ae",
+          "bytes": 2667
+        },
+        "generation_config.json": {
+          "sha256": "94192544b18665e8e30bca3b8c454aa34a5eaf8228b14dd7cb16714b5ca98201",
+          "bytes": 326
+        },
+        "MODEL_NOTICE.md": {
+          "sha256": "2a851ee595d70a649edaf1a0e3b9de646c0a24f5993a070a0308647bc4b90fc1",
+          "bytes": 1495
+        },
+        "OPENAI_LICENSE.txt": {
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063
+        },
+        "processor_config.json": {
+          "sha256": "0ddb6d4341f4f0f0373c0243b9a8a60f914e90ea2794f5833e4a2c389f54e69f",
+          "bytes": 426
+        },
+        "tokenizer.json": {
+          "sha256": "e401c25e87e52bc76fa0b5207944e66fbcc4bff7af221f9649e3e77c40456817",
+          "bytes": 3653972
+        },
+        "tokenizer_config.json": {
+          "sha256": "f3bec852f6fdd3bfeab2bffa1caa0eb732c63c0ac7b3b54c64238953508b8a4c",
+          "bytes": 2197
+        },
+        "UPSTREAM_LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      },
+      "historical_ct2_metrics_apply": false
+    }
+  }
+}

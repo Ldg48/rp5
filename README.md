@@ -9,6 +9,12 @@
 
 이 스택은 Docker Compose로 컨테이너화되어 Windows/macOS/Linux에서 동작합니다.
 
+## M4 음성 모델 인계
+
+이대경 담당 Whisper 모델의 baseline/새 파인튜닝 비교, CT2 구동 코드,
+ONNX 변환본과 입력·출력 규격은 [M4 인계 문서](m4_whisper/README.md)에 있습니다.
+기존 서비스 교체 없이 별도 모듈로 제공하며 팀 통합 전 검증이 필요합니다.
+
 ## 프로젝트 구조
 
 ```text
