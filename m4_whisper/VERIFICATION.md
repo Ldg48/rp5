@@ -95,3 +95,22 @@ python -m venv m4_artifacts/runtime-env
 
 일반 팀원은 export를 재실행할 필요 없이 릴리스 가중치와 runtime requirements만 설치합니다.
 export 환경은 기존 패키지를 일괄 업그레이드하지 않기 위해 별도 venv에 추가 의존성만 설치했습니다.
+
+## 업로드 검증
+
+브랜치 `agent/m4-whisper-handoff-20260916`를 origin에 push했습니다. main은 변경하지 않았습니다.
+사전 릴리스 `m4-whisper-handoff-20260916`의 모델 zip 6개 모두 GitHub에서 보고한 크기와
+SHA-256이 로컬 catalog와 일치했습니다. 세부 증거는 [delivery_receipt.json](delivery_receipt.json)에 있습니다.
+
+게시 후 공개 URL로 finetuned INT8을 다시 내려받아 압축 해시를 확인하고,
+다운로드한 모델에서 오프라인 CT2 실행 결과 `넘어졌어요`를 확인했습니다.
+
+```powershell
+git push -u origin agent/m4-whisper-handoff-20260916
+gh release create m4-whisper-handoff-20260916 --repo Ldg48/rp5 --target agent/m4-whisper-handoff-20260916 --title "M4 Whisper handoff - Lee Daegyeong (2026-09-16)" --notes-file m4_whisper/RELEASE_NOTES.md --prerelease --draft --latest=false
+$assets = Get-ChildItem -LiteralPath m4_artifacts/release -Filter '*.zip' -File | ForEach-Object { $_.FullName }
+gh release upload m4-whisper-handoff-20260916 --repo Ldg48/rp5 @assets
+gh release edit m4-whisper-handoff-20260916 --repo Ldg48/rp5 --draft=false --prerelease --latest=false
+python -m m4_whisper.download --artifact ct2_finetuned_int8 --root m4_artifacts/download_check
+python -m m4_whisper --variant finetuned_int8 --model-root m4_artifacts/download_check/ct2 --audio C:/Users/USER/Desktop/Fold/github/whisper_eval_7_3_20260729/audio/new_recordings/new_eval_0007.wav
+```
